@@ -1,0 +1,480 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <defs>
+    <linearGradient id="yahooBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a0082"/>
+      <stop offset="35%" style="stop-color:#3a0068"/>
+      <stop offset="100%" style="stop-color:#1a0030"/>
+    </linearGradient>
+    <linearGradient id="topBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b0099"/>
+      <stop offset="100%" style="stop-color:#5c0075"/>
+    </linearGradient>
+    <linearGradient id="searchBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f0f0f0"/>
+    </linearGradient>
+    <linearGradient id="searchBtn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff3e3e"/>
+      <stop offset="100%" style="stop-color:#cc0000"/>
+    </linearGradient>
+    <linearGradient id="yellowShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE600"/>
+      <stop offset="50%" style="stop-color:#FEDD00"/>
+      <stop offset="100%" style="stop-color:#FFC800"/>
+    </linearGradient>
+    <linearGradient id="stageFloor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#123eff"/>
+      <stop offset="45%" style="stop-color:#19d7ff"/>
+      <stop offset="100%" style="stop-color:#ff6a2a"/>
+    </linearGradient>
+    <linearGradient id="blastTrail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#44ffcc;stop-opacity:0"/>
+      <stop offset="45%" style="stop-color:#44ffcc;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#ffe85a;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="insetShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="url(#yahooBg)"/>
+
+  <!-- Original 90s action-platformer backdrop -->
+  <g opacity="0.68">
+    <!-- Distant neon city -->
+    <g opacity="0.35">
+      <rect x="0" y="232" width="900" height="2" fill="#19d7ff"/>
+      <path d="M0 232 L30 205 L65 232 L94 185 L135 232 L170 200 L210 232 L260 178 L315 232 L352 196 L390 232 L432 188 L470 232 L520 174 L570 232 L610 199 L650 232 L700 180 L760 232 L805 198 L850 232 L900 186 L900 400 L0 400 Z" fill="#05001a"/>
+      <path d="M0 234 L900 234" stroke="#44ffcc" stroke-width="1" opacity="0.35"/>
+    </g>
+
+    <!-- Parallax speed lines -->
+    <g filter="url(#softGlow)">
+      <animateTransform attributeName="transform" type="translate" values="-180,0;0,0" dur="4s" repeatCount="indefinite"/>
+      <rect x="0" y="78" width="120" height="2" fill="url(#blastTrail)"/>
+      <rect x="220" y="96" width="170" height="2" fill="url(#blastTrail)"/>
+      <rect x="520" y="82" width="150" height="2" fill="url(#blastTrail)"/>
+      <rect x="760" y="108" width="140" height="2" fill="url(#blastTrail)"/>
+      <rect x="115" y="205" width="130" height="3" fill="url(#blastTrail)"/>
+      <rect x="430" y="218" width="190" height="3" fill="url(#blastTrail)"/>
+      <rect x="715" y="198" width="170" height="3" fill="url(#blastTrail)"/>
+    </g>
+
+    <!-- Pixel stage floor -->
+    <g opacity="0.75">
+      <rect x="0" y="350" width="900" height="8" fill="url(#stageFloor)"/>
+      <rect x="0" y="358" width="900" height="26" fill="#080923"/>
+      <g opacity="0.8">
+        <animateTransform attributeName="transform" type="translate" values="0,0;-72,0" dur="2.8s" repeatCount="indefinite"/>
+        <rect x="0" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="72" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="144" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="216" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="288" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="360" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="432" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="504" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="576" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="648" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="720" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="792" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="864" y="362" width="42" height="5" fill="#19d7ff"/>
+        <rect x="936" y="362" width="42" height="5" fill="#19d7ff"/>
+      </g>
+    </g>
+
+    <!-- Red saber rival, original pixel art -->
+    <g transform="translate(54, 164) scale(1.28)" opacity="0.95">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0;5,0;0,0" dur="1.15s" repeatCount="indefinite"/>
+        <!-- Long helmet hair -->
+        <rect x="34" y="0" width="24" height="8" fill="#ffd447"/>
+        <rect x="46" y="8" width="24" height="8" fill="#ffd447"/>
+        <rect x="58" y="16" width="18" height="10" fill="#f0a400"/>
+        <rect x="64" y="26" width="12" height="22" fill="#f0a400"/>
+        <!-- Helmet and face -->
+        <rect x="22" y="8" width="28" height="18" fill="#d9002e"/>
+        <rect x="28" y="14" width="18" height="8" fill="#ffe0b0"/>
+        <rect x="42" y="16" width="5" height="4" fill="#7df4ff"/>
+        <rect x="18" y="20" width="12" height="10" fill="#ff3158"/>
+        <rect x="48" y="20" width="10" height="10" fill="#8b001f"/>
+        <!-- Torso -->
+        <rect x="18" y="34" width="38" height="18" fill="#d9002e"/>
+        <rect x="26" y="38" width="22" height="14" fill="#ff3158"/>
+        <rect x="30" y="52" width="16" height="18" fill="#111a4a"/>
+        <rect x="34" y="40" width="8" height="8" fill="#7df4ff"/>
+        <!-- Arms and saber -->
+        <rect x="4" y="38" width="18" height="10" fill="#d9002e"/>
+        <rect x="-12" y="41" width="18" height="8" fill="#ffd447"/>
+        <rect x="-66" y="39" width="58" height="4" fill="#44ffcc" filter="url(#softGlow)"/>
+        <rect x="54" y="36" width="18" height="10" fill="#d9002e"/>
+        <rect x="70" y="38" width="14" height="8" fill="#ffd447"/>
+        <!-- Legs and boots -->
+        <rect x="20" y="70" width="14" height="34" fill="#d9002e"/>
+        <rect x="44" y="70" width="14" height="34" fill="#d9002e"/>
+        <rect x="12" y="102" width="24" height="10" fill="#ffd447"/>
+        <rect x="42" y="102" width="28" height="10" fill="#ffd447"/>
+      </g>
+    </g>
+
+    <!-- Blue armored side-scroller hero, original pixel art -->
+    <g transform="translate(704, 150) scale(1.55)" opacity="1">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0;-6,0;0,0" dur="1s" repeatCount="indefinite"/>
+      <rect x="28" y="0" width="20" height="8" fill="#19d7ff"/>
+      <rect x="20" y="8" width="36" height="18" fill="#1167ff"/>
+      <rect x="24" y="12" width="26" height="8" fill="#7df4ff"/>
+      <rect x="14" y="20" width="50" height="14" fill="#0c3bd6"/>
+      <rect x="22" y="34" width="34" height="34" fill="#1167ff"/>
+      <rect x="28" y="40" width="22" height="16" fill="#7df4ff"/>
+      <rect x="4" y="34" width="18" height="12" fill="#19d7ff"/>
+      <rect x="-18" y="38" width="22" height="10" fill="#ffcf33"/>
+      <rect x="56" y="34" width="36" height="14" fill="#19d7ff"/>
+      <rect x="92" y="37" width="18" height="8" fill="#7df4ff"/>
+      <rect x="24" y="68" width="12" height="34" fill="#0c3bd6"/>
+      <rect x="46" y="68" width="12" height="34" fill="#0c3bd6"/>
+      <rect x="14" y="98" width="24" height="10" fill="#19d7ff"/>
+      <rect x="44" y="98" width="28" height="10" fill="#19d7ff"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Top purple nav bar -->
+  <rect width="900" height="36" fill="url(#topBar)"/>
+  <line x1="0" y1="36" x2="900" y2="36" stroke="#9b30ff" stroke-width="1" opacity="0.4"/>
+
+  <!-- Nav links -->
+  <text x="30" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#e8d0ff" opacity="0.9">Mail</text>
+  <text x="65" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#ffffff" opacity="0.5">|</text>
+  <text x="78" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#e8d0ff" opacity="0.9">360°</text>
+  <text x="112" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#ffffff" opacity="0.5">|</text>
+  <text x="125" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#e8d0ff" opacity="0.9">Messenger</text>
+  <text x="192" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#ffffff" opacity="0.5">|</text>
+  <text x="205" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#e8d0ff" opacity="0.9">Games</text>
+  <text x="248" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#ffffff" opacity="0.5">|</text>
+  <text x="261" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#e8d0ff" opacity="0.9">Blog</text>
+  <text x="760" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#FEDD00" opacity="0.9">Sign In</text>
+  <text x="810" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#ffffff" opacity="0.5">|</text>
+  <text x="823" y="23" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#e8d0ff" opacity="0.9">Help</text>
+
+  <!-- 404 watermark -->
+  <text x="450" y="260" text-anchor="middle" font-family="'Georgia', serif" font-size="200" font-weight="bold" fill="#ffffff" opacity="0.025">404</text>
+
+  <!-- Title -->
+  <text x="448" y="130" text-anchor="middle" font-family="'Georgia', serif" font-size="58" font-weight="bold" font-style="italic" fill="#000000" opacity="0.2">404 memories!</text>
+  <text x="450" y="128" text-anchor="middle" font-family="'Georgia', serif" font-size="58" font-weight="bold" font-style="italic" fill="url(#yellowShine)" filter="url(#textShadow)">404 memories!</text>
+
+  <!-- Search bar -->
+  <rect x="200" y="152" width="420" height="34" rx="4" fill="url(#searchBar)" stroke="#bbb" stroke-width="1" filter="url(#insetShadow)"/>
+  <text x="215" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#999999" opacity="0.8">Search your memories...</text>
+  <!-- Still cursor in search bar -->
+  <rect x="355" y="160" width="2" height="18" fill="#333333"/>
+  <!-- Search button -->
+  <rect x="620" y="152" width="80" height="34" rx="4" fill="url(#searchBtn)"/>
+  <text x="660" y="174" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Search</text>
+
+  <!-- Subtitle -->
+  <text x="450" y="218" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#e8d0ff" opacity="0.85" letter-spacing="1">A digital time capsule of Vietnamese internet culture</text>
+
+  <!-- ========== PIXEL ART: YM Smiley (left) ========== -->
+  <!-- Face -->
+  <g opacity="0.85">
+    <!-- Head outline -->
+    <rect x="40" y="90" width="6" height="6" fill="#c8a800"/>
+    <rect x="46" y="84" width="6" height="6" fill="#c8a800"/>
+    <rect x="52" y="78" width="6" height="6" fill="#c8a800"/>
+    <rect x="58" y="74" width="6" height="6" fill="#c8a800"/>
+    <rect x="64" y="72" width="6" height="6" fill="#c8a800"/>
+    <rect x="70" y="72" width="6" height="6" fill="#c8a800"/>
+    <rect x="76" y="74" width="6" height="6" fill="#c8a800"/>
+    <rect x="82" y="78" width="6" height="6" fill="#c8a800"/>
+    <rect x="88" y="84" width="6" height="6" fill="#c8a800"/>
+    <rect x="94" y="90" width="6" height="6" fill="#c8a800"/>
+    <rect x="94" y="96" width="6" height="6" fill="#c8a800"/>
+    <rect x="94" y="102" width="6" height="6" fill="#c8a800"/>
+    <rect x="88" y="108" width="6" height="6" fill="#c8a800"/>
+    <rect x="82" y="114" width="6" height="6" fill="#c8a800"/>
+    <rect x="76" y="118" width="6" height="6" fill="#c8a800"/>
+    <rect x="70" y="120" width="6" height="6" fill="#c8a800"/>
+    <rect x="64" y="120" width="6" height="6" fill="#c8a800"/>
+    <rect x="58" y="118" width="6" height="6" fill="#c8a800"/>
+    <rect x="52" y="114" width="6" height="6" fill="#c8a800"/>
+    <rect x="46" y="108" width="6" height="6" fill="#c8a800"/>
+    <rect x="40" y="102" width="6" height="6" fill="#c8a800"/>
+    <rect x="40" y="96" width="6" height="6" fill="#c8a800"/>
+    <!-- Face fill -->
+    <rect x="46" y="78" width="48" height="36" fill="#FEDD00"/>
+    <rect x="52" y="74" width="36" height="6" fill="#FEDD00"/>
+    <rect x="46" y="90" width="6" height="18" fill="#FEDD00"/>
+    <rect x="88" y="90" width="6" height="18" fill="#FEDD00"/>
+    <rect x="52" y="108" width="36" height="6" fill="#FEDD00"/>
+    <!-- Eyes -->
+    <rect x="58" y="86" width="6" height="8" fill="#1a0030"/>
+    <rect x="76" y="86" width="6" height="8" fill="#1a0030"/>
+    <!-- Mouth -->
+    <rect x="58" y="102" width="6" height="4" fill="#1a0030"/>
+    <rect x="64" y="106" width="12" height="4" fill="#1a0030"/>
+    <rect x="76" y="102" width="6" height="4" fill="#1a0030"/>
+
+    <!-- Online status dot - blinks on -->
+    <rect x="96" y="116" width="4" height="4" fill="#00cc00">
+      <animate attributeName="opacity" values="0;0;1;1" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="100" y="116" width="4" height="4" fill="#00ff00">
+      <animate attributeName="opacity" values="0;0;1;1" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="96" y="120" width="4" height="4" fill="#00ff00">
+      <animate attributeName="opacity" values="0;0;1;1" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="100" y="120" width="4" height="4" fill="#44ff44">
+      <animate attributeName="opacity" values="0;0;1;1" dur="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ========== PIXEL ART: Dial-up loading bar (left side) ========== -->
+  <g transform="translate(42, 135)">
+    <text x="0" y="0" font-family="'Courier New', monospace" font-size="8" fill="#c89eff" opacity="0.6">CONNECTING...</text>
+    <rect x="0" y="5" width="56" height="6" fill="#1a0030" stroke="#5c0075" stroke-width="1"/>
+    <!-- Loading segments -->
+    <rect x="1" y="6" width="7" height="4" fill="#00ff00" opacity="0.9">
+      <animate attributeName="opacity" values="0.2;0.9;0.9;0.9;0.9" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="9" y="6" width="7" height="4" fill="#00ff00" opacity="0.9">
+      <animate attributeName="opacity" values="0.2;0.2;0.9;0.9;0.9" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="17" y="6" width="7" height="4" fill="#00ff00" opacity="0.9">
+      <animate attributeName="opacity" values="0.2;0.2;0.2;0.9;0.9" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="25" y="6" width="7" height="4" fill="#00ff00" opacity="0.9">
+      <animate attributeName="opacity" values="0.2;0.2;0.2;0.2;0.9" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="33" y="6" width="7" height="4" fill="#00ee00" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.2;0.2;0.2;0.9" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="41" y="6" width="7" height="4" fill="#00dd00" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.2;0.2;0.2;0.8" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="49" y="6" width="5" height="4" fill="#00cc00" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.2;0.2;0.2;0.6" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ========== PIXEL ART: Pixel heart (right side) ========== -->
+  <g transform="translate(820, 75)" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.5;0.8" dur="1.5s" repeatCount="indefinite"/>
+    <rect x="6" y="0" width="6" height="6" fill="#ff3366"/>
+    <rect x="18" y="0" width="6" height="6" fill="#ff3366"/>
+    <rect x="0" y="6" width="6" height="6" fill="#ff3366"/>
+    <rect x="6" y="6" width="6" height="6" fill="#ff6699"/>
+    <rect x="12" y="6" width="6" height="6" fill="#ff3366"/>
+    <rect x="18" y="6" width="6" height="6" fill="#ff6699"/>
+    <rect x="24" y="6" width="6" height="6" fill="#ff3366"/>
+    <rect x="0" y="12" width="6" height="6" fill="#ff3366"/>
+    <rect x="6" y="12" width="6" height="6" fill="#ff3366"/>
+    <rect x="12" y="12" width="6" height="6" fill="#ff6699"/>
+    <rect x="18" y="12" width="6" height="6" fill="#ff3366"/>
+    <rect x="24" y="12" width="6" height="6" fill="#ff3366"/>
+    <rect x="6" y="18" width="6" height="6" fill="#ff3366"/>
+    <rect x="12" y="18" width="6" height="6" fill="#ff3366"/>
+    <rect x="18" y="18" width="6" height="6" fill="#ff3366"/>
+    <rect x="12" y="24" width="6" height="6" fill="#ff3366"/>
+  </g>
+
+  <!-- ========== PIXEL ART: Mail envelope (right) ========== -->
+  <g transform="translate(815, 118)">
+    <!-- Envelope body -->
+    <rect x="0" y="6" width="36" height="24" fill="#e8d0ff" opacity="0.7"/>
+    <rect x="0" y="6" width="36" height="24" fill="none" stroke="#9b30ff" stroke-width="1" opacity="0.5"/>
+    <!-- Envelope flap -->
+    <rect x="0" y="6" width="4" height="4" fill="#d4b0ff" opacity="0.7"/>
+    <rect x="4" y="10" width="4" height="4" fill="#d4b0ff" opacity="0.7"/>
+    <rect x="8" y="14" width="4" height="4" fill="#d4b0ff" opacity="0.7"/>
+    <rect x="12" y="18" width="4" height="4" fill="#d4b0ff" opacity="0.7"/>
+    <rect x="16" y="18" width="4" height="4" fill="#d4b0ff" opacity="0.7"/>
+    <rect x="20" y="14" width="4" height="4" fill="#d4b0ff" opacity="0.7"/>
+    <rect x="24" y="10" width="4" height="4" fill="#d4b0ff" opacity="0.7"/>
+    <rect x="28" y="6" width="4" height="4" fill="#d4b0ff" opacity="0.7"/>
+    <rect x="32" y="6" width="4" height="4" fill="#d4b0ff" opacity="0.7"/>
+    <!-- "NEW" blink -->
+    <text x="38" y="14" font-family="'Courier New', monospace" font-size="8" font-weight="bold" fill="#ff3e3e">
+      NEW!
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- ========== PIXEL ART: Sparkle stars (scattered, twinkling) ========== -->
+  <!-- Star 1 -->
+  <g transform="translate(160, 60)">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    <rect x="4" y="0" width="2" height="2" fill="#FEDD00"/>
+    <rect x="0" y="4" width="2" height="2" fill="#FEDD00"/>
+    <rect x="2" y="2" width="6" height="6" fill="#FEDD00"/>
+    <rect x="8" y="4" width="2" height="2" fill="#FEDD00"/>
+    <rect x="4" y="8" width="2" height="2" fill="#FEDD00"/>
+  </g>
+  <!-- Star 2 -->
+  <g transform="translate(720, 55)">
+    <animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="0.8s" repeatCount="indefinite"/>
+    <rect x="4" y="0" width="2" height="2" fill="#ff69b4"/>
+    <rect x="0" y="4" width="2" height="2" fill="#ff69b4"/>
+    <rect x="2" y="2" width="6" height="6" fill="#ff69b4"/>
+    <rect x="8" y="4" width="2" height="2" fill="#ff69b4"/>
+    <rect x="4" y="8" width="2" height="2" fill="#ff69b4"/>
+  </g>
+  <!-- Star 3 -->
+  <g transform="translate(400, 50)">
+    <animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="1.2s" repeatCount="indefinite"/>
+    <rect x="4" y="0" width="2" height="2" fill="#44ffcc"/>
+    <rect x="0" y="4" width="2" height="2" fill="#44ffcc"/>
+    <rect x="2" y="2" width="6" height="6" fill="#44ffcc"/>
+    <rect x="8" y="4" width="2" height="2" fill="#44ffcc"/>
+    <rect x="4" y="8" width="2" height="2" fill="#44ffcc"/>
+  </g>
+  <!-- Star 4 -->
+  <g transform="translate(570, 48)">
+    <animate attributeName="opacity" values="0;1;0" dur="3s" begin="0.3s" repeatCount="indefinite"/>
+    <rect x="4" y="0" width="2" height="2" fill="#FEDD00"/>
+    <rect x="0" y="4" width="2" height="2" fill="#FEDD00"/>
+    <rect x="2" y="2" width="6" height="6" fill="#FEDD00"/>
+    <rect x="8" y="4" width="2" height="2" fill="#FEDD00"/>
+    <rect x="4" y="8" width="2" height="2" fill="#FEDD00"/>
+  </g>
+  <!-- Star 5 -->
+  <g transform="translate(250, 52)">
+    <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="1.8s" repeatCount="indefinite"/>
+    <rect x="4" y="0" width="2" height="2" fill="#ff69b4"/>
+    <rect x="0" y="4" width="2" height="2" fill="#ff69b4"/>
+    <rect x="2" y="2" width="6" height="6" fill="#ff69b4"/>
+    <rect x="8" y="4" width="2" height="2" fill="#ff69b4"/>
+    <rect x="4" y="8" width="2" height="2" fill="#ff69b4"/>
+  </g>
+
+  <!-- ========== PIXEL ART: Pixel character walking (original, not Megaman) ========== -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0,0" to="-100,0" dur="8s" repeatCount="indefinite"/>
+  <!-- Frame 1: standing -->
+  <g transform="translate(780, 300)">
+    <animate attributeName="opacity" values="1;1;0;0" dur="0.6s" repeatCount="indefinite"/>
+    <!-- Hair -->
+    <rect x="4" y="0" width="12" height="4" fill="#1a0030"/>
+    <!-- Head -->
+    <rect x="4" y="4" width="12" height="10" fill="#ffcc88"/>
+    <!-- Eyes -->
+    <rect x="6" y="8" width="2" height="2" fill="#1a0030"/>
+    <rect x="12" y="8" width="2" height="2" fill="#1a0030"/>
+    <!-- Body (purple shirt — Yahoo intern lol) -->
+    <rect x="2" y="14" width="16" height="12" fill="#7b0099"/>
+    <!-- Yellow Y on shirt -->
+    <rect x="8" y="16" width="4" height="2" fill="#FEDD00"/>
+    <rect x="9" y="18" width="2" height="4" fill="#FEDD00"/>
+    <!-- Arms -->
+    <rect x="-2" y="14" width="4" height="10" fill="#ffcc88"/>
+    <rect x="18" y="14" width="4" height="10" fill="#ffcc88"/>
+    <!-- Legs -->
+    <rect x="4" y="26" width="4" height="10" fill="#333366"/>
+    <rect x="12" y="26" width="4" height="10" fill="#333366"/>
+    <!-- Shoes -->
+    <rect x="2" y="36" width="6" height="4" fill="#cc0000"/>
+    <rect x="12" y="36" width="6" height="4" fill="#cc0000"/>
+  </g>
+  <!-- Frame 2: walking -->
+  <g transform="translate(780, 300)">
+    <animate attributeName="opacity" values="0;0;1;1" dur="0.6s" repeatCount="indefinite"/>
+    <!-- Hair -->
+    <rect x="4" y="0" width="12" height="4" fill="#1a0030"/>
+    <!-- Head -->
+    <rect x="4" y="4" width="12" height="10" fill="#ffcc88"/>
+    <!-- Eyes -->
+    <rect x="6" y="8" width="2" height="2" fill="#1a0030"/>
+    <rect x="12" y="8" width="2" height="2" fill="#1a0030"/>
+    <!-- Body -->
+    <rect x="2" y="14" width="16" height="12" fill="#7b0099"/>
+    <!-- Yellow Y on shirt -->
+    <rect x="8" y="16" width="4" height="2" fill="#FEDD00"/>
+    <rect x="9" y="18" width="2" height="4" fill="#FEDD00"/>
+    <!-- Arms swinging -->
+    <rect x="-2" y="16" width="4" height="10" fill="#ffcc88"/>
+    <rect x="18" y="12" width="4" height="10" fill="#ffcc88"/>
+    <!-- Legs apart -->
+    <rect x="2" y="26" width="4" height="12" fill="#333366"/>
+    <rect x="14" y="26" width="4" height="8" fill="#333366"/>
+    <!-- Shoes -->
+    <rect x="0" y="38" width="6" height="4" fill="#cc0000"/>
+    <rect x="14" y="34" width="6" height="4" fill="#cc0000"/>
+  </g>
+  </g>
+
+  <!-- ========== PIXEL ART: Hourglass cursor (loading) ========== -->
+  <g transform="translate(140, 110)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="1s" repeatCount="indefinite"/>
+    <!-- Top triangle -->
+    <rect x="0" y="0" width="14" height="2" fill="#FEDD00"/>
+    <rect x="2" y="2" width="10" height="2" fill="#FEDD00"/>
+    <rect x="4" y="4" width="6" height="2" fill="#FEDD00"/>
+    <rect x="6" y="6" width="2" height="2" fill="#FEDD00"/>
+    <!-- Bottom triangle -->
+    <rect x="6" y="8" width="2" height="2" fill="#FEDD00"/>
+    <rect x="4" y="10" width="6" height="2" fill="#FEDD00"/>
+    <rect x="2" y="12" width="10" height="2" fill="#FEDD00"/>
+    <rect x="0" y="14" width="14" height="2" fill="#FEDD00"/>
+  </g>
+
+  <!-- ========== PIXEL ART: Music notes floating ========== -->
+  <g transform="translate(130, 290)" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" values="130,290;125,275;130,290" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3s" repeatCount="indefinite"/>
+    <rect x="0" y="0" width="4" height="4" fill="#c89eff"/>
+    <rect x="4" y="0" width="4" height="4" fill="#c89eff"/>
+    <rect x="8" y="-4" width="2" height="8" fill="#c89eff"/>
+  </g>
+  <g transform="translate(155, 300)" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" values="155,300;160,282;155,300" dur="2.5s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="2.5s" begin="1s" repeatCount="indefinite"/>
+    <rect x="0" y="0" width="4" height="4" fill="#ff69b4"/>
+    <rect x="4" y="0" width="4" height="4" fill="#ff69b4"/>
+    <rect x="8" y="-4" width="2" height="8" fill="#ff69b4"/>
+  </g>
+
+  <!-- Era tags -->
+  <rect x="124" y="248" width="64" height="24" rx="12" fill="#7b0099" opacity="0.6" stroke="#9b30ff" stroke-width="0.5"/>
+  <text x="156" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#FEDD00" font-weight="bold">Yahoo!</text>
+  <rect x="196" y="248" width="72" height="24" rx="12" fill="#7b0099" opacity="0.6" stroke="#9b30ff" stroke-width="0.5"/>
+  <text x="232" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#FEDD00" font-weight="bold">Zing Me</text>
+  <rect x="276" y="248" width="112" height="24" rx="12" fill="#7b0099" opacity="0.6" stroke="#9b30ff" stroke-width="0.5"/>
+  <text x="332" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#FEDD00" font-weight="bold">Avatar TeaMobi</text>
+  <rect x="396" y="248" width="98" height="24" rx="12" fill="#7b0099" opacity="0.6" stroke="#9b30ff" stroke-width="0.5"/>
+  <text x="445" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#FEDD00" font-weight="bold">FIFA Online</text>
+  <rect x="502" y="248" width="84" height="24" rx="12" fill="#7b0099" opacity="0.6" stroke="#9b30ff" stroke-width="0.5"/>
+  <text x="544" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#FEDD00" font-weight="bold">Facebook</text>
+  <rect x="594" y="248" width="54" height="24" rx="12" fill="#7b0099" opacity="0.6" stroke="#9b30ff" stroke-width="0.5"/>
+  <text x="621" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#FEDD00" font-weight="bold">iPad</text>
+  <rect x="656" y="248" width="54" height="24" rx="12" fill="#7b0099" opacity="0.6" stroke="#9b30ff" stroke-width="0.5"/>
+  <text x="683" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#FEDD00" font-weight="bold">iPod</text>
+  <rect x="718" y="248" width="62" height="24" rx="12" fill="#7b0099" opacity="0.6" stroke="#9b30ff" stroke-width="0.5"/>
+  <text x="749" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#FEDD00" font-weight="bold">Nokia</text>
+
+  <!-- Divider -->
+  <line x1="100" y1="288" x2="800" y2="288" stroke="#9b30ff" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Tagline -->
+  <text x="450" y="312" text-anchor="middle" font-family="'Georgia', serif" font-size="12" font-style="italic" fill="#c89eff" opacity="0.6">for every 9x kid who never logged out</text>
+
+  <!-- Year range -->
+  <rect x="380" y="325" width="140" height="26" rx="13" fill="none" stroke="#FEDD00" stroke-width="1" opacity="0.35"/>
+  <text x="450" y="343" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#FEDD00" opacity="0.6">1997 — 2010</text>
+
+  <!-- Bottom bar -->
+  <rect y="384" width="900" height="16" fill="#5c0075" opacity="0.5"/>
+  <text x="450" y="395" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#e8d0ff" opacity="0.5">Copyright © 2026 404 Memories. Do you remember?</text>
+</svg>
