@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="#the-story">The Story</a> · <a href="#the-eras">The Eras</a> · <a href="#clayderman-discography">Clayderman Discography</a> · <a href="#tech-stack">Stack</a> · <a href="#getting-started">Run It</a> · <a href="#contributing">Contribute</a>
+  <a href="#the-story">The Story</a> · <a href="#the-eras">The Eras</a> · <a href="#clayderman-discography">Clayderman Discography</a> · <a href="#gap-nhau-cuoi-tuan">Gap Nhau Cuoi Tuan</a> · <a href="#tech-stack">Stack</a> · <a href="#getting-started">Run It</a> · <a href="#contributing">Contribute</a>
 </p>
 
 ---
@@ -70,6 +70,12 @@ Each era is a fully styled, interactive section. When you scroll into Yahoo 360,
 Richard Clayderman's piano recordings are part of the ambient soundtrack of 90s-2000s Vietnam: cafes, wedding videos, CD shops, TV backgrounds, and family slideshows.
 
 A full CSV reference lives in [`clayderman.csv`](clayderman.csv). It includes 4,702 track rows from 250 official MusicBrainz releases, with release type, album dates, country, disc/track numbers, artist credits, and release IDs so the data can be audited and expanded.
+
+<br/>
+
+## Gap Nhau Cuoi Tuan
+
+The early VTV comedy lineage around **Gặp nhau cuối tuần** is indexed in [`gap-nhau-cuoi-tuan-2000-2006.csv`](gap-nhau-cuoi-tuan-2000-2006.csv). It covers the 2000-2006 original run and related pre-2010 series names/specials such as **Gala cười**, **Gala cười sinh viên**, and **Gặp nhau cuối năm / Táo Quân**, with source links for each row. This is metadata only: no video, audio, scripts, or transcripts are included.
 
 <br/>
 
