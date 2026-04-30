@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="#the-story">The Story</a> · <a href="#the-eras">The Eras</a> · <a href="#tech-stack">Stack</a> · <a href="#getting-started">Run It</a> · <a href="#contributing">Contribute</a>
+  <a href="#the-story">The Story</a> · <a href="#the-eras">The Eras</a> · <a href="#clayderman-data">Clayderman Data</a> · <a href="#tech-stack">Stack</a> · <a href="#getting-started">Run It</a> · <a href="#contributing">Contribute</a>
 </p>
 
 ---
@@ -62,6 +62,14 @@ Built for the 8x/9x generation of Vietnam. Built from the things we can't Google
 ```
 
 Each era is a fully styled, interactive section. When you scroll into Yahoo 360, the page *becomes* Yahoo 360. Purple gradients, sparkle cursors, auto-playing midi. When you hit FIFA Online 3, the lobby loads. This is cosplay for websites.
+
+<br/>
+
+## Clayderman Data
+
+Richard Clayderman's piano recordings are part of the ambient soundtrack of 90s-2000s Vietnam: cafes, wedding videos, CD shops, TV backgrounds, and family slideshows.
+
+A compact starter dataset lives in [`clayderman.csv`](clayderman.csv). It includes representative tracks, album/year hints, original composer credits, and a short memory-context field for future site features. It is intentionally small so entries can be expanded only when they are verified.
 
 <br/>
 
